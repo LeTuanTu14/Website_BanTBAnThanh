@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amply Arirang SPA-909</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="../js/scriptTC.js"></script>
+    <style>
+        #tieuDe {
+            text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+            font-size: 30px;
+            font-weight: bolder;
+        }
+	body{min-width:1281px}
+    </style>
+</head>
+
+<body style="background-color:#bae5f2;">
+    <div class="container-fluid">
+        <div class="row" style="background-color:  #ffffff;height: 100px;">
+            <div class="col-md-9">
+                <a href="../html/trangchu.html"><img src="../image/logo.jpg" alt="" style="width: 130px; height: 100px;margin-left: 100px;"></a> 
+                <span style="margin-top: 5px" id="tieuDe"><i class="fas fa-star" aria-hidden="true"></i> TH Audio | Cửa Hàng Thiết
+                    Bị Âm Thanh Chính Hãng</span>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.youtube.com/" style="margin-top: 5px;margin-left: 0px;" title="Trang Youtube"><i
+                        class="fab fa-youtube" style="margin-right: 5px;" aria-hidden="true"></i>Youtube</a>
+
+                <a href="https://www.facebook.com/" style="margin-left: 10px;margin-top: 5px;line-height: 60px;"
+                    title="Trang Fanpage"><i class="fab fa-facebook" style="margin-right: 5px;"
+                        aria-hidden="true"></i>Facebook</a>
+
+                <a href="../html/giohang.html" style="margin-left: 10px;margin-top: 5px;line-height: 40px;" title="Giỏ hàng"><i
+                        class="fas fa-shopping-cart" style="margin-right: 5px;" aria-hidden="true"></i>Giỏ hàng</a>
+            </div>
+
+
+        </div>
+        <!-- <div class="col-md-12" style="padding: 0px;">
+            <img src="../image/header.jpg" alt="" style="width: 100%; height: 100px;">
+        </div> -->
+        <div class="row">
+            <div class="col-md-12" style="padding: 0px;">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-inverse" style="background-color: #239ece">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../html/trangchu.html" id="trangchu" style="margin-left: 100px;">Trang
+                        chủ</a>
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listLoa.html" id="dsLoa">Loa <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listAmply.html" id="dsAmply">Amply</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listMicro.html" id="dsMicro">Micro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listDanAmThanh.html" id="dsDanAmThanh">Dàn âm
+                                    thanh</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" id="txtTK" type="search" placeholder="Tìm kiếm"
+                                aria-label="Tìm kiếm">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="timkiem" style="color: rgb(119, 26, 8);">Tìm
+                                kiếm</button>
+                        </form>
+
+                        <span id="user" style="margin-left: 10px; margin-right: 5px; color: rgb(13, 12, 13);">...</span>
+                        <span>|</span>
+                        <a href="../html/dangnhap.html" id="dangxuat" style="margin-left: 5px; color: black;margin-right: 100px;">
+                            Đăng
+                            xuất</a>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+        <div class="rowa" style="margin-left: 100px; margin-right: 100px; background-color: white;margin-top: 10px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../image/amply03.jpg" alt=""
+                        style="width: 300px;height: 300px;" id="avatar">
+                </div>
+                <div class="col-md-4">
+                    <h3 style="margin-top: 20px;" id="tensp">Amply Arirang SPA-909</h3><br>
+                    <h4 style="color: red;">Giá: <span style="color: red;" id="giasp">4.500.000</span>  VND</h4><br>
+                    <button class="btn btn-success" id="themgiohang">
+                        <i class="fas fa-shopping-cart" style="margin-right: 5px;" aria-hidden="true"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <div style="border: 1px solid rgb(129, 121, 121);margin: 10px;">
+                        <span style="color: #1ca0d4;margin-left:20px;font-weight: bold;margin-top: 10px;">Hotline đặt
+                            hàng :</span><span style="color: red;">+84 123 456 789</span><br>
+                        <ul>
+                            <li>Giao hàng ship COD toàn quốc</li>
+                            <li>Giao trong vòng 2 đến 3 ngày (Toàn quốc)</li>
+                            <li>Cam kết hàng chính hãng 100%</li>
+                            <li>Cam kết sản phẩm mới 100%, giá rẻ nhất, chiết khấu % cao</li>
+
+                        </ul>
+                        <span style="color: #1ca0d4;margin-left:20px;font-weight: bold;">ĐỊA CHỈ MUA HÀNG</span><br>
+                        <span style="margin-left: 20px;"><i class="fas fa-house"></i>Số 5 Ngõ 107 Quang Trung - Gò Vấp -
+                            TP. Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2
+                        style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; background-color: #239ece;color: white;margin-left: 30px;margin-right: 30px;">
+                        MÔ TẢ SẢN PHẨM</h2>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px;">
+                    <span> 
+                        <b>Amply Arirang SPA-909</b>
+                        là dòng Amply chuyên dùng hát karaoke với khả năng xử lý các tạp âm, 
+                        tạo ra giá trị riêng biệt, mang lại giọng hát 
+                        trong và vang cho người sử dụng
+                    </span>
+                </div>
+                <div class="col-md-12">
+                    <img src="../image/amply03.jpg" alt=""
+                        style="width: 600px;height: 600px;">
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px;">
+                    <span style="font-size: 25px; font-weight: bold;"> 
+                        Thông số kỹ thuật: Amply Arirang SPA-909 
+                    </span><br>
+                    <ul>
+                        <li>Kích thước Amply: 395 x 185 x 465 mm</li>
+                        <li>Trọng lượng Amply: 10kg</li>
+                        <li>Số kênh sử dụng: 2 kênh</li>
+                        <li>Điện áp sử dụng: 220V</li>
+                        <li>Công suất tiêu thụ: 450W</li>
+                        <li>Xuất xứ: Nhật Bản</li>
+                    </ul>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px; margin-bottom: 20px;">
+                    <span style="font-size: 20px; font-weight: bold;">Đặc điểm nổi bật</span><br>
+                    <span> 
+                        <b>Amply Arirang SPA-909</b> có những ưu điểm nổi bật sau đây:
+                    </span><br>
+                    <span style="margin-bottom: 20px;"> 
+                       <ul>
+                           <li>
+                            Màu sắc trang nhã, bắt mắt, phù hợp với mọi không gian.
+                           </li>
+                           <li>
+                            Có thể điều chỉnh giọng hát thành nhiều chất giọng khác nhau mang đến sự thích thú cho người nghe, người hát
+                           </li>
+                           <li>Có khả năng lọc tạp âm rất tốt, giúp giọng hát được chuẩn hơn, hay hơn.</li>
+                           <li>Có khả năng truyền âm và phát ra âm thanh rất lớn trong thời gian dài mà không hại máy</li>
+                       </ul>
+                    </span>
+
+                </div>
+
+                <div class="col-md-12">
+                    <h2
+                        style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; background-color: #239ece;color: white;margin-left: 30px;margin-right: 30px;">
+                        Bình luận và đánh giá</h2>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px; padding-right: 50px;">
+                    <textarea rows="3" type="text" id="binhluan" placeholder="Bình luận"
+                        class="form-control"></textarea>
+                    <input type="button" id="dangBL" class="btn btn-success" value="Bình luận">
+
+
+                </div>
+
+                <div class="col-md-12"
+                    style="padding-left: 50px; padding-right: 50px;padding-bottom: 50px;margin-top: 30px;" id="listBL">
+                    <h5>Các bình luận:</h5>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="rowa" style="margin-left: 100px; margin-right: 100px; background-color: white;margin-top: 10px;">
+            <div class="row" style="border-bottom: 1px solid #b2b2b2;margin-left: 5px;margin-right: 5px;">
+                <h4>AMPLY KARAOKE</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../html/spAmply01.html">
+                        <img src="../image/amply01.jpg" alt="" width="200px"><br>
+                        <span style="margin-left: 2px;">Amply Karaoke Arirang AR-3600S</span><br>
+                        <span style="color: red;margin-left: 30px;">Giá: 2.200.000 VND</span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+                    <a href="../html/spAmply02.html">
+                        <img src="../image/amply02.jpg" alt="" width="200px"><br>
+                        <span style="margin-left: 2px;">Amply Karaoke Arirang SPA-306XG Digital</span><br>
+                        <span style="color: red;margin-left: 30px;">Giá: 3.200.000 VND</span>
+                    </a>
+
+                </div>
+                <div class="col-md-3">
+                    <a href="../html/spAmply03.html">
+                        <img src="../image/amply03.jpg" alt="" width="200px"><br>
+                        <span style="margin-left: 2px;">Amply Arirang SPA-909</span><br>
+                        <span style="color: red;margin-left: 30px;">Giá: 4.500.000 VND</span>
+                    </a>
+
+                </div>
+                <div class="col-md-3">
+                    <a href="../html/spAmply04.html">
+                        <img src="../image/amply04.jpg" alt="" width="200px"><br>
+                        <span style="margin-left: 2px;">Amply Arirang PA 203XG</span><br>
+                        <span style="color: red;margin-left: 30px;">Giá: 7.900.000 VND</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row" style="background-color: rgb(243, 251, 255);margin-top: 10px;">
+                <div class="col-md-4">
+                    <h2 style="margin-left: 50px;">Về Chúng Tôi</h2>
+                    <p style="margin-left: 50px;">Trang web giới thiệu, bán thiết bị âm thanh trực tuyến Việt Nam.</p>
+                    <ul class="social-icon" style="margin-left: 50px;">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Đường Dẫn</h2>
+                    <ul>
+                        <li><a href="../html/trangchu.html">Trang Chủ</a></li>
+                        <li><a href="../html/gioithieu.html">Về Chúng Tôi</a></li>
+                        <li><a href="../html/sitemap.html">Site Map</a></li>
+                        <li><a href="#">Thông Tin Liên Lạc</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Điều Kiện Chính Sách</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>Số 5 Ngõ 107 Quang Trung,<br />
+                                Gò Vấp, TP. Hồ Chí Minh<br />
+                                Việt Nam</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+84 123 456 789</a>
+                                <br />
+                                <a href="#">+84 987 654 321</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">thaudio2022@gmail.com</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    © 2022 – CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ TH AUDIO VIỆT NAM – Số 5 Ngõ 107 Quang Trung - Gò Vấp -
+                    TP. Hồ Chí Minh
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    MST: 0108651374 (Số giấy chứng nhận đăng ký kinh doanh thương nhân) Nơi cấp: Sở kế hoạch và đầu tư
+                    thành phố Hồ Chí Minh
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

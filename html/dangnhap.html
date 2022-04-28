@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đăng Nhập | TH Audio</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="../css/demo.css">
+	<script src="../js/validate.js"></script>
+	<script src="../js/scriptDN.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div class="center">
+			<div class="card card-outline card-primary">
+				<div class="card-header text-center">
+					<a href="" class="h1"><b id="tuade">Đăng Nhập</b></a>
+				</div>
+				<div class="card-body">
+					<div class="divcenter" style="font-size: 20px;text-align: center;">Chào mừng bạn đến với TH Audio</div>
+					<br>
+
+					<form action="" id="formDN" name="formDN" onsubmit="(validateDN());">
+
+						<div class="inputWithIcon">
+							<input id="txtSDT" type="text" onblur="ktraSDT()" class="form-control"
+								placeholder="Số điện thoại" />
+							<i class="fas fa-phone" aria-hidden="true"></i>
+
+						</div>
+
+						<div class="input-group mb-3">
+							<label id="sdtError" class="error"></label>
+						</div>
+
+
+						<div class="inputWithIcon">
+							<input id="matKhau" name="matKhau" type="password" class="form-control"
+								placeholder="Mật khẩu" />
+							<i class="fas fa-lock" aria-hidden="true"></i>
+
+						</div>
+
+						<div class="input-group mb-3">
+							<label id="matKhauError" class="error"></label>
+						</div>
+
+						<div class="row">
+
+							<div class="col-12" style="text-align: center">
+								<!--Chuyen sang trang home chat-->
+								<button id="login" type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+							</div>
+						</div>
+					</form>
+
+					<br>
+					<!-- Chuyển qua trang dang ky -->
+					<a href="" id="dangky" class="text-center">Bạn chưa có tài khoản</a>
+					<br>
+					<a href="" id="quenMK" class="text-center">Quên mật khẩu?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

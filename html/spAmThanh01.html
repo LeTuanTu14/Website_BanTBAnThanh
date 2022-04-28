@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dàn Âm Thanh Hội Trường JBL Beilarly VF05</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="../js/scriptTC.js"></script>
+    <style>
+        #tieuDe {
+            text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+            font-size: 30px;
+            font-weight: bolder;
+        }
+	body{min-width:1281px}
+    </style>
+</head>
+
+<body style="background-color:#bae5f2;">
+    <div class="container-fluid">
+        <div class="row" style="background-color:  #ffffff;height: 100px;">
+            <div class="col-md-9">
+                <a href="../html/trangchu.html"><img src="../image/logo.jpg" alt="" style="width: 130px; height: 100px;margin-left: 100px;"></a> 
+                <span style="margin-top: 5px" id="tieuDe"><i class="fas fa-star" aria-hidden="true"></i> TH Audio | Cửa Hàng Thiết
+                    Bị Âm Thanh Chính Hãng</span>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.youtube.com/" style="margin-top: 5px;margin-left: 0px;" title="Trang Youtube"><i
+                        class="fab fa-youtube" style="margin-right: 5px;" aria-hidden="true"></i>Youtube</a>
+
+                <a href="https://www.facebook.com/" style="margin-left: 10px;margin-top: 5px;line-height: 60px;"
+                    title="Trang Fanpage"><i class="fab fa-facebook" style="margin-right: 5px;"
+                        aria-hidden="true"></i>Facebook</a>
+
+                <a href="../html/giohang.html" style="margin-left: 10px;margin-top: 5px;line-height: 40px;" title="Giỏ hàng"><i
+                        class="fas fa-shopping-cart" style="margin-right: 5px;" aria-hidden="true"></i>Giỏ hàng</a>
+            </div>
+
+
+        </div>
+        <!-- <div class="col-md-12" style="padding: 0px;">
+            <img src="../image/header.jpg" alt="" style="width: 100%; height: 100px;">
+        </div> -->
+        <div class="row">
+            <div class="col-md-12" style="padding: 0px;">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-inverse" style="background-color: #239ece">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../html/trangchu.html" id="trangchu" style="margin-left: 100px;">Trang
+                        chủ</a>
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listLoa.html" id="dsLoa">Loa <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listAmply.html" id="dsAmply">Amply</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listMicro.html" id="dsMicro">Micro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/listDanAmThanh.html" id="dsDanAmThanh">Dàn âm
+                                    thanh</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" id="txtTK" type="search" placeholder="Tìm kiếm"
+                                aria-label="Tìm kiếm">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="timkiem" style="color: rgb(119, 26, 8);">Tìm
+                                kiếm</button>
+                        </form>
+
+                        <span id="user" style="margin-left: 10px; margin-right: 5px; color: rgb(13, 12, 13);">...</span>
+                        <span>|</span>
+                        <a href="../html/dangnhap.html" id="dangxuat" style="margin-left: 5px; color: black;margin-right: 100px;">
+                            Đăng
+                            xuất</a>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+        <div class="rowa" style="margin-left: 100px; margin-right: 100px; background-color: white;margin-top: 10px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../image/amthanh01.jpg" alt=""
+                        style="width: 300px;height: 300px;" id="avatar">
+                </div>
+                <div class="col-md-4">
+                    <h3 style="margin-top: 20px;" id="tensp">Dàn Âm Thanh Hội Trường JBL Beilarly VF05</h3><br>
+                    <h4 style="color: red;">Giá: <span style="color: red;" id="giasp">80.000.000</span>  VND</h4><br>
+                    <button class="btn btn-success" id="themgiohang">
+                        <i class="fas fa-shopping-cart" style="margin-right: 5px;" aria-hidden="true"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <div style="border: 1px solid rgb(129, 121, 121);margin: 10px;">
+                        <span style="color: #1ca0d4;margin-left:20px;font-weight: bold;margin-top: 10px;">Hotline đặt
+                            hàng :</span><span style="color: red;">+84 123 456 789</span><br>
+                        <ul>
+                            <li>Giao hàng ship COD toàn quốc</li>
+                            <li>Giao trong vòng 2 đến 3 ngày (Toàn quốc)</li>
+                            <li>Cam kết hàng chính hãng 100%</li>
+                            <li>Cam kết sản phẩm mới 100%, giá rẻ nhất, chiết khấu % cao</li>
+
+                        </ul>
+                        <span style="color: #1ca0d4;margin-left:20px;font-weight: bold;">ĐỊA CHỈ MUA HÀNG</span><br>
+                        <span style="margin-left: 20px;"><i class="fas fa-house"></i>Số 5 Ngõ 107 Quang Trung - Gò Vấp -
+                            TP. Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2
+                        style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; background-color: #239ece;color: white;margin-left: 30px;margin-right: 30px;">
+                        MÔ TẢ SẢN PHẨM</h2>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px;">
+                    <span> 
+                        <b>Dàn Âm Thanh Hội Trường JBL Beilarly VF05</b>
+                        sẽ là một lựa chọn hoàn hảo dành cho bạn, bộ dàn có chất lượng âm thanh cao 
+                        cùng công suất khuyếch đại mạnh mẽ sẽ đáp ứng đầy đủ mọi nhu cầu của khách hàng.
+                    </span>
+                </div>
+                <div class="col-md-12">
+                    <img src="../image/amthanh01.jpg" alt=""
+                        style="width: 600px;height: 600px;">
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px;">
+                    <span style="font-size: 25px; font-weight: bold;"> 
+                        Danh Sách Sản Phẩm Dàn Âm Thanh Hội Trường JBL Beilarly VF05
+                    </span><br>
+                    <ul>
+                        <li>Loa array Beilarly AL-20: 3 cặp</li>
+                        <li>Loa SUB Beilarly AL-218: 1 cặp</li>
+                        <li>Bàn mixer Dynacord CMS1000: 1 chiếc</li>
+                        <li>Cục đẩy 4 kênh Beilarly BD-4800: 1 Cái</li>
+                        <li>Cục đẩy 4 kênh Beilarly BD-5600: 1 cái</li>
+                        <li>Driverack dbx 260: 1 cái</li>
+                        <li>Micro không dây Beilarly BL 2003D : 1 bộ</li>
+                        <li>Auto nguồn Beilarly AA-C8: 1 chiếc</li>
+                        <li>Tủ rack 12U có ngăn mixer: 1 chiếc</li>   
+                    </ul>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px;padding-right: 50px; margin-bottom: 20px;">
+                    <span style="font-size: 20px; font-weight: bold;">Review Nhanh Dàn Âm Thanh Hội Trường JBL Beilarly VF05</span><br>
+                    <span> 
+                        <ol type="1">
+                            <b><li>Loa array Beilarly AL-20</li></b>
+                            
+                            <span>
+                                Loa array Beilarly AL-20 là dòng loa hội trường có công suất lớn đang được 
+                                yêu thích nhất hiện nay. Loa được thiết kế móc treo array thông minh cùng độ 
+                                duỗi lên đến 15 độ giúp bạn có thể bố trí, lắp đặt ở bất kì không gian nào. 
+                                Hệ thống âm thanh 2 đường tiếng cho chất âm cực đỉnh cùng công suất lớn tối đa 
+                                lên đến 3500W cho khả năng khuếch đại âm thanh một cách mạnh mẽ.
+                            </span>
+                            <b><li>Loa SUB Beilarly AL-218</li></b>
+                            
+                            <span>
+                                Loa SUB Beilarly AL-218 là dòng loa bass lớn không chỉ được người tiêu dùng yêu 
+                                thích mà còn nhận được đánh giá cao từ các chuyên gia từ thiết kế đến chất lượng. 
+                                Sản phẩm có thiết kế sang trọng, tỉ mỉ cùng âm thanh mạnh mẽ, chân thực, kích thích người nghe.
+                            </span>
+                            <b><li>Bàn Mixer Dynacord CMS1000</li></b>
+                            
+                            <span>
+                                Nhắc đến bàn mixer chúng ta không thể không nhắc đến bàn Mixer Dynacord 
+                                CMS1000 – một sản phẩm đến từ thương hiệu âm thanh nổi tiếng Dynacord (Đức). 
+                                Với việc trang bị 10 đường tiếng cao cấp gồm có 6 Mono và 4 Stereo, chức năng 
+                                Effect đôi và Stereo Equalizer 11 bands cho khả năng tùy biến âm thanh một cách dễ dàng.
+                            </span>
+                            <b><li>Cục đẩy 4 kênh Beilarly BD-4800</li></b>
+                            
+                            <span>
+                                Là một trong các sản phẩm có công suất lớn nhất hiện nay, cục đẩy 4 kênh 
+                                Beilarly BD-4800 đang xuất hiện phổ biến trong dàn âm thanh hội trường 
+                                chuyên nghiệp. Sản phẩm có công suất lên đến 3200W/4 kênh tương ứng là 
+                                800W/Kênh cho khả năng khuếch đại tín hiệu một cách mạnh mẽ đáp ứng những 
+                                nhu cầu sử dụng âm thanh trong các không gian lớn.
+                            </span>
+                            <b><li>Cục đẩy 4 kênh Beilarly BD-5600</li></b>
+                            
+                            <span>
+                                Để đáp ứng nhu cầu âm thanh chuyên nghiệp, bạn không thể không sắm ngay cục 
+                                đẩy 4 kênh Beilarly BD-5600 là một sản phẩm đến từ hãng âm thanh Beilarly 
+                                đang làm mưa làm gió tại thị trường Việt Nam. Sản phẩm có thiết kế nhỏ gọn 
+                                nhưng lại đem lại khả năng khuếch đại âm thanh vượt trội, dễ dàng kéo được 
+                                các loa karaoke hoặc loa sub cỡ lớn nhờ công suất lên đến 600W x 4Kênh (8Ω); 750W và 4 Kênh (4Ω).
+                            </span>
+                            <b><li>Driverack DBX 260</li></b>
+                            
+                            <span>
+                                Là sản phẩm thuộc dòng DriveRack, Driverack DBX 260 kế thừa hoàn toàn ưu điểm 
+                                của các đàn anh đi trước. Driverack dbx 260 được thiết kế cho khả năng xử lý 
+                                tín hiệu hiện đại, đồng thời giao diện cũng phải trực quan, đơn giản. 
+                                Điều đó được thực hiện bằng cách cung cấp hai kênh công suất xử lý tín 
+                                hiệu độc lập với bộ cân bằng đồ họa 28 băng tần có thể liên kết, mô-đun máy 
+                                nén âm thanh nổi dbx tiêu chuẩn công nghiệp,cùng nhiều bộ một bộ lọc thông tin 
+                                phản hồi và một bộ khuếch đại Subhaarmonic 120A.
+                            </span>
+                            <b><li>Micro không dây Beilarly BL 2003D</li></b>
+                            
+                            <span>
+                                Là dòng sản phẩm micro bán chạy hàng đầu của hãng Beilarly, micro không dây sở hữu 
+                                nhiều ưu điểm vượt trội so với các sản phẩm khác. Được thiết kế màn hình Led hiện 
+                                đại giúp hiển thị chế độ làm việc, tình trạng của thiết bị, màng mic được làm từ 
+                                hợp kim cao cấp giúp tăng độ bền cùng hiệu quả lọc âm tốt, công nghệ tần số UHF 
+                                đem đến khả năng thu phát tín hiệu ở một khoảng cách xa cực kì ổn định.
+                            </span>
+                            <b><li>Auto nguồn Beilarly AA-C8</li></b>
+                            
+                            <span>
+                                Là một phụ kiện thiết bị âm thanh quan trọng giúp ổn định điện áp dòng 
+                                điện mà bất cứ dàn âm thanh nào cũng nên lắp đặt. Sản phẩm có thiết kế 1 
+                                cổng vào và 9 cổng ra tương thích với hầu hết các phích cắm ở Việt Nam 
+                                đồng thời được ứng dụng công suất cao, hoàn toàn phù hợp với các dàn âm 
+                                thanh chuyên nghiệp.
+                            </span>
+                            <b><li>Tủ rack 12U có ngăn mixer</li></b>
+                            
+                            <span>
+                                Là chiếc tủ được thiết kế dùng để chứa đựng các thiết bị âm thanh, 
+                                tủ rack 12U còn trở nên tiện lợi hơn nhờ thiết kế ngăn trên cùng chứa 
+                                mixer giúp cho việc thao tác trở nên dễ dàng hơn bao giờ hết
+                            </span>
+                        </ol>
+                    </span>
+
+                </div>
+
+                <div class="col-md-12">
+                    <h2
+                        style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; background-color: #239ece;color: white;margin-left: 30px;margin-right: 30px;">
+                        Bình luận và đánh giá</h2>
+                </div>
+                <div class="col-md-12" style="padding-left: 50px; padding-right: 50px;">
+                    <textarea rows="3" type="text" id="binhluan" placeholder="Bình luận"
+                        class="form-control"></textarea>
+                    <input type="button" id="dangBL" class="btn btn-success" value="Bình luận">
+
+
+                </div>
+
+                <div class="col-md-12"
+                    style="padding-left: 50px; padding-right: 50px;padding-bottom: 50px;margin-top: 30px;" id="listBL">
+                    <h5>Các bình luận:</h5>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="rowa" style="margin-left: 100px; margin-right: 100px; background-color: white;margin-top: 10px;">
+            <div class="row" style="border-bottom: 1px solid #b2b2b2;margin-left: 5px;margin-right: 5px;">
+                <h4>DÀN ÂM THANH HỘI TRƯỜNG</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../html/spAmThanh01.html">
+                        <img src="../image/amthanh01.jpg" alt="" width="200px" style="margin-left: 40px;"><br>
+                        <span >Dàn Âm Thanh Hội Trường JBL Beilarly VF05</span><br>
+                        <span style="color: red;margin-left: 60px;">Giá: 80.000.000 VND</span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+                    <a href="../html/spAmThanh02.html">
+                        <img src="../image/amthanh02.jpg" alt="" width="200px" style="margin-left: 40px;"><br>
+                        <span>Dàn Âm Thanh Hội Trường JBL Tầm Trung</span><br>
+                        <span style="color: red;margin-left: 60px;">Giá: 60.000.000 VND</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../html/spAmThanh03.html">
+                        <img src="../image/amthanh03.jpg" alt="" width="200px" style="margin-left: 40px;"><br>
+                        <span>Dàn Âm Thanh Hội Trường Beilarly Và JBL</span><br>
+                        <span style="color: red;margin-left: 60px;">Giá: 79.000.000 VND</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../html/spAmThanh04.html">
+                        <img src="../image/amthanh04.jpg" alt="" width="200px" style="margin-left: 40px;"><br>
+                        <span style="margin-left: 10px;">Dàn Âm Thanh Hội Trường 200M2</span><br>
+                        <span style="color: red;margin-left: 60px;">Giá: 99.000.000 VND</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="row" style="background-color: rgb(243, 251, 255);margin-top: 10px;">
+                <div class="col-md-4">
+                    <h2 style="margin-left: 50px;">Về Chúng Tôi</h2>
+                    <p style="margin-left: 50px;">Trang web giới thiệu, bán thiết bị âm thanh trực tuyến Việt Nam.</p>
+                    <ul class="social-icon" style="margin-left: 50px;">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Đường Dẫn</h2>
+                    <ul>
+                        <li><a href="../html/trangchu.html">Trang Chủ</a></li>
+                        <li><a href="../html/gioithieu.html">Về Chúng Tôi</a></li>
+                        <li><a href="../html/sitemap.html">Site Map</a></li>
+                        <li><a href="#">Thông Tin Liên Lạc</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Điều Kiện Chính Sách</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>Số 5 Ngõ 107 Quang Trung,<br />
+                                Gò Vấp, TP. Hồ Chí Minh<br />
+                                Việt Nam</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+84 123 456 789</a>
+                                <br />
+                                <a href="#">+84 987 654 321</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">thaudio2022@gmail.com</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    © 2022 – CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ TH AUDIO VIỆT NAM – Số 5 Ngõ 107 Quang Trung - Gò Vấp -
+                    TP. Hồ Chí Minh
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    MST: 0108651374 (Số giấy chứng nhận đăng ký kinh doanh thương nhân) Nơi cấp: Sở kế hoạch và đầu tư
+                    thành phố Hồ Chí Minh
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

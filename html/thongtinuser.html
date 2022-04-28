@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tạo thông tin</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="../css/demo.css">
+	<script src="../js/validate.js"></script>
+	<script src="../js/scriptProfile.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div class="center">
+			<div class="card card-outline card-primary">
+				<div class="card-header text-center">
+					<a href="" class="h4"><b>Thêm mới thông tin tài khoản</b></a>
+				</div>
+				<div class="card-body">
+					<div class="center"><img src="../image/avataUser.png"
+							style="text-align: center; width: 100px;height: 100px; margin-left: 50px;"></div>
+					<br>
+
+					<form action="" id="formTT" name="formTT" onsubmit="(validateTTSDK());">
+
+						<div class="inputWithIcon">
+							<input id="txtHoTen" type="text" class="form-control" placeholder="Họ tên"
+								onblur="ktraTen()" />
+							<i class="far fa-user" aria-hidden="true"></i>
+						</div>
+
+						<div class="input-group mb-3">
+							<label id="hoTenError" class="error"></label>
+						</div>
+
+						<div class="inputWithIcon">
+							<input id="txtDiaChi" type="text" class="form-control" placeholder="Địa chỉ"
+								onblur="ktraDiaChi()" />
+							<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+						</div>
+
+						<div class="input-group mb-3">
+							<label id="diaChiError" class="error"></label>
+						</div>
+
+						<div class="input-group mb-3">
+							<label>Ngày sinh: </label>
+							<select style="margin-left: 20px;" name="ngay" id="ngay" size="1"></select>
+							<select style="margin-left: 20px;" name="thang" id="thang" size="1"></select>
+							<select style="margin-left: 20px; width: 80px;" name="nam" id="nam" size="1"></select>
+
+						</div>
+
+						<div class="input-group mb-3">
+							<label id="ngaySinhError" class="error"></label>
+						</div>
+
+						<div class="input-group mb-3">
+							<label>Giới tính: </label>
+							<input style="margin-left: 30px; margin-top: 5px;" type="radio" name="radioGT" value="true"
+								checked>
+							<span style="margin-left: 10px;">Nam</span>
+							<input style="margin-left: 10px; margin-top: 5px;" type="radio" name="radioGT"
+								value="false">
+							<span style="margin-left: 10px;">Nữ</span>
+
+						</div>
+						<div class="input-group mb-3">
+							<label id="profileError" class="error"></label>
+						</div>
+						<div class="row">
+
+							<div class="col-12" style="text-align: center">
+								<!--Chuyển sang trang chat-->
+								<button type="submit" id="saveProfile" class="btn btn-primary btn-block">Xác
+									nhận</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
